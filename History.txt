@@ -1,3 +1,8 @@
+== 0.2.0 2008-04-12
+* Keita Yamaguchi:
+  * GitHub: http://github.com/keita/ruby-dvi/wikis/home
+  * Reduced files included in the gem
+
 == 0.1.0 2007-12-18
 
 * Keita Yamaguchi:
