@@ -1,4 +1,14 @@
 module Dvi
+  module Version #:nodoc:
+    MAJOR = 0
+    MINOR = 2
+    TINY  = 0
+
+    STRING = [MAJOR, MINOR, TINY].join('.')
+  end
+
+  VERSION = Version::STRING
+
   class Processor
     attr_accessor :h, :v, :w, :x, :y, :z, :font, :fonts
     attr_reader :stack, :chars, :rules, :lsr
@@ -8,7 +18,7 @@ module Dvi
     def initialize(lsr=Dvi::LsR.default)
       @h = 0 # horizontal position
       @v = 0 # vertical position
-      @w = 0 # 
+      @w = 0
       @x = 0
       @y = 0
       @z = 0
